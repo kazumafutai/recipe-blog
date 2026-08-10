@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>きつねうどん</title>
+
+<style>
+body {
+  font-family: "Yu Gothic", sans-serif;
+  margin: 0;
+  background: #fafafa;
+  line-height: 1.8;
+}
+
+/* ヘッダー */
+header {
+  background: #ff7043;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* メインコンテンツ */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* 写真カード */
+.photo-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  margin-bottom: 30px;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.photo-card .caption {
+  padding: 15px;
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+}
+
+/* レシピカード */
+.recipe-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.recipe-card h2 {
+  margin-top: 0;
+  border-left: 6px solid #ff7043;
+  padding-left: 10px;
+  font-size: 24px;
+}
+
+.recipe-card h3 {
+  margin-top: 25px;
+  font-size: 20px;
+  color: #444;
+}
+
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.step {
+  background: #fff7f2;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-left: 4px solid #ff7043;
+}
+
+.ingredients-wrapper {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.ingredients-wrapper ul {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 250px;
+}
+
+/* スマホ対応 */
+@media (max-width: 700px) {
+  photo-card img {
+    height: 200px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>きつねうどん</header>
+
+<div class="container">
+
+  <!-- 写真カード -->
+  <div class="photo-card">
+    <img src="img/kitsune_udon.png" alt="きつねうどん">
+    <div class="caption">じゅわっと染み出る「きつねうどん」</div>
+  </div>
+
+  <!-- レシピカード -->
+  <div class="recipe-card">
+    <h2>きつねうどん</h2>
+
+    <h3>材料（1人前）</h3>
+    <div class="ingredients-wrapper">
+        <ul>
+            <li>油揚げ：2枚</li>
+            <li>水：100ml</li>
+            <li>醤油：大さじ1</li>
+            <li>みりん：大さじ3</li>
+            <li>味の素：1振り</li>
+            <li>カツオ粉：1つまみ（1g）</li>
+        </ul>
+
+        <ul>
+            <li>水：350ml</li>
+            <li>醤油：小さじ1</li>
+            <li>酒：大さじ1</li>
+            <li>醤油：大さじ1</li>
+            <li>みりん：大さじ1</li>
+            <li>味の素：5振り</li>
+            <li>カツオ粉：4つまみ（4g）</li>
+            <li>塩：1つまみ</li>
+            <li>冷凍うどん：1玉</li>
+            <li>長ネギ：1/4本</li>
+        </ul>
+    </div>
+
+
+    <h3>作り方（1人前）</h3>
+    <div class="step">1. 鰹節5gを器に入れ、電子レンジ600W 50秒加熱した後、揉みほぐしてカツオ粉を作っておく。</div>
+    <div class="step">2. フライパンに水100ml、醤油大さじ1、みりん大さじ3、カツオ粉1g、味の素1振り入れる。</div>
+    <div class="step">3. 2.の中に1枚を半分に切った油揚げを2枚浸し、蓋をして5分煮る。</div>
+    <div class="step">4. 鍋に水350ml、醤油小さじ1、酒大さじ1、みりん大さじ1、カツオ粉4g、塩1つまみ入れて沸かす。</div>
+    <div class="step">5. 4.の鍋に、電子レンジで温めた冷凍うどん1玉と、長ネギの斜め細切りを入れて沸かし、油揚げ1枚分のせて完成。</div>
+  </div>
+
+</div>
+
+</body>
+</html>
