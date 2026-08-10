@@ -3,38 +3,112 @@
 <head>
 <meta charset="UTF-8">
 <title>うどんメニュー一覧</title>
+
 <style>
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    padding: 20px;
-}
-.menu-grid a {
-    background: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    font-size: 18px;
-    color: #ff7043;
-    text-decoration: none;
-}
-.menu-grid a:hover {
-    background: #ffe8df;
-}
+    body {
+        font-family: "Hiragino Sans", "Meiryo", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fafafa;
+        color: #333;
+    }
+
+    header {
+        background: #ff7043;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .menu-item {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        overflow: hidden;
+        text-align: center;
+        transition: 0.2s;
+    }
+
+    .menu-item:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .menu-item img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .menu-item a {
+        display: block;
+        padding: 12px;
+        font-size: 18px;
+        color: #ff7043;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .menu-item a:hover {
+        text-decoration: underline;
+    }
+
+    /* スマホ対応 */
+    @media (max-width: 700px) {
+        .menu-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
 </style>
+
 </head>
 <body>
 
-<h1>うどんメニュー一覧</h1>
+<header>うどんメニュー一覧</header>
 
 <div class="menu-grid">
-    <a href="udon/kake.html">かけうどん</a>
-    <a href="udon/kitsune.html">きつねうどん</a>
-    <a href="udon/niku.html">肉うどん</a>
-    <a href="udon/curry.html">カレーうどん</a>
-    <a href="udon/bukkake.html">ぶっかけうどん</a>
+
+    <!-- かけうどん -->
+    <div class="menu-item">
+        <img src="udon/kake.jpg" alt="かけうどん">
+        <a href="udon/kake.html">かけうどん</a>
+    </div>
+
+    <!-- きつねうどん -->
+    <div class="menu-item">
+        <img src="udon/kitsune.jpg" alt="きつねうどん">
+        <a href="udon/kitsune.html">きつねうどん</a>
+    </div>
+
+    <!-- 肉うどん -->
+    <div class="menu-item">
+        <img src="udon/niku.jpg" alt="肉うどん">
+        <a href="udon/niku.html">肉うどん</a>
+    </div>
+
+    <!-- カレーうどん -->
+    <div class="menu-item">
+        <img src="udon/curry.jpg" alt="カレーうどん">
+        <a href="udon/curry.html">カレーうどん</a>
+    </div>
+
+    <!-- ぶっかけうどん -->
+    <div class="menu-item">
+        <img src="udon/bukkake.jpg" alt="ぶっかけうどん">
+        <a href="udon/bukkake.html">ぶっかけうどん</a>
+    </div>
+
 </div>
 
 </body>
