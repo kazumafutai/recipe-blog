@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>ひっぱりうどん</title>
+<title>【ひっぱりうどん】</title>
 
 <style>
 body {
@@ -73,11 +73,36 @@ header {
   color: #444;
 }
 
+/* 材料カード（横並び） */
+.ingredients-wrapper {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.ingredients-block {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 250px;
+}
+
+.ingredients-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ff7043;
+  border-bottom: 2px solid #ff7043;
+  padding-bottom: 4px;
+}
+
 ul {
   margin-top: 10px;
   padding-left: 20px;
 }
 
+/* 作り方ステップ */
 .step {
   background: #fff7f2;
   padding: 12px;
@@ -88,23 +113,27 @@ ul {
 
 /* スマホ対応 */
 @media (max-width: 700px) {
-  photo-card img {
+  .ingredients-wrapper {
+    flex-direction: column;
+  }
+  .photo-card img {
     height: 200px;
   }
 }
 </style>
+
 </head>
 
 <body>
 
-<header>ひっぱりうどん</header>
+<header>【鯖缶と納豆で作る「山形名物」ひっぱりうどん】</header>
 
 <div class="container">
 
   <!-- 写真カード -->
   <div class="photo-card">
     <img src="img/hippari_udon.jpg" alt="ひっぱりうどん">
-    <div class="caption">鯖缶と納豆で作る「山形名物」ひっぱりうどん</div>
+    <div class="caption">鯖缶と納豆で作る山形名物「ひっぱりうどん」</div>
   </div>
 
   <!-- レシピカード -->
@@ -112,17 +141,24 @@ ul {
     <h2>ひっぱりうどん</h2>
 
     <h3>材料（2人前）</h3>
-    <ul>
-      <li>サバ水煮缶：1缶（160g）</li>
-      <li>冷凍うどん：2玉</li>
-      <li>ひきわり納豆：2パック</li>
-      <li>卵：2個</li>
-      <li>水煮缶の汁：小さじ4</li>
-      <li>小ねぎ：適量</li>
-      <li>3倍濃縮麺つゆ：大さじ1</li>
-      <li>カツオ粉：2つまみ</li>
-      <li>刻みのり：適量</li>
-    </ul>
+    <div class="ingredients-wrapper">
+
+      <div class="ingredients-block">
+        <div class="ingredients-title"></div>
+          <ul>
+            <li>サバ水煮缶：1缶（160g）</li>
+            <li>冷凍うどん：2玉</li>
+            <li>ひきわり納豆：2パック</li>
+            <li>卵：2個</li>
+            <li>水煮缶の汁：小さじ4</li>
+            <li>小ねぎ：適量</li>
+            <li>3倍濃縮麺つゆ：大さじ1</li>
+            <li>カツオ粉：2つまみ</li>
+            <li>刻みのり：適量</li>
+          </ul>
+      </div>
+
+    </div>
 
     <h3>作り方（1人前）</h3>
     <div class="step">1. 器にひきわり納豆1パック（タレとからしも使う）入れて混ぜておく。</div>
