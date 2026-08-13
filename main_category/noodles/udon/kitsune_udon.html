@@ -73,36 +73,11 @@ header {
   color: #444;
 }
 
-/* 材料カード（横並び） */
-.ingredients-wrapper {
-  display: flex;
-  gap: 30px;
-  margin-top: 20px;
-}
-
-.ingredients-block {
-  background: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  width: 250px;
-}
-
-.ingredients-title {
-  font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #ff7043;
-  border-bottom: 2px solid #ff7043;
-  padding-bottom: 4px;
-}
-
 ul {
   margin-top: 10px;
   padding-left: 20px;
 }
 
-/* 作り方ステップ */
 .step {
   background: #fff7f2;
   padding: 12px;
@@ -111,12 +86,23 @@ ul {
   border-left: 4px solid #ff7043;
 }
 
+.ingredients-wrapper {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.ingredients-wrapper ul {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 250px;
+}
+
 /* スマホ対応 */
 @media (max-width: 700px) {
-  .ingredients-wrapper {
-    flex-direction: column;
-  }
-  .photo-card img {
+  photo-card img {
     height: 200px;
   }
 }
@@ -138,48 +124,39 @@ ul {
   <!-- レシピカード -->
   <div class="recipe-card">
     <h2>きつねうどん</h2>
+
     <h3>材料（1人前）</h3>
-
     <div class="ingredients-wrapper">
-
-      <div class="ingredients-block">
-        <div class="ingredients-title">【きつね】</div>
         <ul>
-          <li>油揚げ：2枚</li>
-          <li>水：100ml</li>
-          <li>醤油：大さじ1</li>
-          <li>みりん：大さじ3</li>
-          <li>味の素：1振り</li>
-          <li>カツオ粉：1つまみ（1g）</li>
+            <li>油揚げ：2枚</li>
+            <li>水：100ml</li>
+            <li>醤油：大さじ1</li>
+            <li>みりん：大さじ3</li>
+            <li>味の素：1振り</li>
+            <li>カツオ粉：1つまみ（1g）</li>
         </ul>
-      </div>
 
-      <div class="ingredients-block">
-        <div class="ingredients-title">【うどんスープ】</div>
         <ul>
-          <li>水：350ml</li>
-          <li>醤油：小さじ1</li>
-          <li>酒：大さじ1</li>
-          <li>醤油：大さじ1</li>
-          <li>みりん：大さじ1</li>
-          <li>味の素：5振り</li>
-          <li>カツオ粉：4つまみ（4g）</li>
-          <li>塩：1つまみ</li>
-          <li>冷凍うどん：1玉</li>
-          <li>長ネギ：1/4本 斜め細切り</li>
+            <li>水：350ml</li>
+            <li>醤油：小さじ1</li>
+            <li>酒：大さじ1</li>
+            <li>醤油：大さじ1</li>
+            <li>みりん：大さじ1</li>
+            <li>味の素：5振り</li>
+            <li>カツオ粉：4つまみ（4g）</li>
+            <li>塩：1つまみ</li>
+            <li>冷凍うどん：1玉</li>
+            <li>長ネギ：1/4本</li>
         </ul>
-      </div>
-
     </div>
 
-    <h3>作り方</h3>
 
+    <h3>作り方（1人前）</h3>
     <div class="step">1. 鰹節5gを器に入れ、電子レンジ600W 50秒加熱した後、揉みほぐしてカツオ粉を作っておく。</div>
     <div class="step">2. フライパンに水100ml、醤油大さじ1、みりん大さじ3、カツオ粉1g、味の素1振り入れる。</div>
     <div class="step">3. 2.の中に1枚を半分に切った油揚げを2枚浸し、蓋をして5分煮る。</div>
     <div class="step">4. 鍋に水350ml、醤油小さじ1、酒大さじ1、みりん大さじ1、カツオ粉4g、塩1つまみ入れて沸かす。</div>
-    <div class="step">5. 4.の鍋に、電子レンジで温めた冷凍うどん1玉と、長ネギを入れて沸かし、油揚げ1枚分のせて完成。</div>
-
+    <div class="step">5. 4.の鍋に、電子レンジで温めた冷凍うどん1玉と、長ネギの斜め細切りを入れて沸かし、油揚げ1枚分のせて完成。</div>
   </div>
 
 </div>
